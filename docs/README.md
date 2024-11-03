@@ -1,43 +1,41 @@
-Aqui está uma estrutura mais completa com seções detalhadas:
-
 ---
 
 # PythonWebTools
 
-**PythonWebTools** é uma biblioteca de utilitários para Python focada em melhorar suas aplicações web com funções e ferramentas comuns.
+**PythonWebTools** is a utility library for Python focused on enhancing your web applications with common functions and tools.
 
-## Funcionalidades
+## Features
 
-- Validação de e-mail
-- Validação de CPF e CNPJ
-- Validação de senha
-- Validação de número de telefone
-- Utilitários criptográficos (Password hashing e criptografia)
-- Verificação de dados de entrada
+- Email validation
+- CPF and CNPJ validation
+- Password validation
+- Phone number validation
+- Cryptographic utilities (Password hashing and encryption)
+- Input data verification
 
-## Sumário
+## Table of Contents
 
-1. [Instalação](#instalação)
-2. [Funcionalidades e Exemplos](usage_examples.md)
-3. [Contribuindo](#contribuindo)
-4. [Licença](#licença)
+1. [Installation](#installation)
+2. [Features and Examples](usage_examples.md)
+3. [Contributing](#contributing)
+4. [License](#license)
 
 ---
 
-## Instalação
+## Installation
 
-Para instalar o PythonWebTools, você pode usar o `pip`:
+To install PythonWebTools, you can use `pip`:
 
 ```bash
 pip install pythonwebtools
 ```
 
-## Contribuindo
+## Contributing
 
-Contribuições são bem-vindas! Veja as diretrizes de contribuição no repositório GitHub.
+Contributions are welcome! Please see the contribution guidelines in the GitHub repository.
 
-## Licença
+## License
 
-Este projeto é licenciado sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
 ---

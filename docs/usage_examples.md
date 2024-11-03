@@ -1,151 +1,149 @@
-Claro! Aqui está a versão revisada do seu documento, agora com um sumário para facilitar a navegação. Isso ajudará os leitores a encontrar rapidamente a seção desejada.
+### Table of Contents
 
-### Sumário
-
-1. [Exemplos de Uso](#exemplos-de-uso)
-   - [Validação de Campos de Entrada](#validação-de-campos-de-entrada)
-   - [Validação de Número de Telefone](#validação-de-número-de-telefone)
-   - [Validação de CPF](#validação-de-cpf)
-   - [Validação de CNPJ](#validação-de-cnpj)
-   - [Validação de E-mail](#validação-de-e-mail)
-   - [Validação de Senha](#validação-de-senha)
-   - [Utilitários Criptográficos](#utilitários-criptográficos)
-   - [Utilitários de Hash](#utilitários-de-hash)
+1. [Usage Examples](#usage-examples)
+   - [Input Field Validation](#input-field-validation)
+   - [Phone Number Validation](#phone-number-validation)
+   - [CPF Validation](#cpf-validation)
+   - [CNPJ Validation](#cnpj-validation)
+   - [Email Validation](#email-validation)
+   - [Password Validation](#password-validation)
+   - [Cryptographic Utilities](#cryptographic-utilities)
+   - [Hash Utilities](#hash-utilities)
 
 ---
 
-### Exemplos de Uso
+### Usage Examples
 
-#### Validação de Campos de Entrada
+#### Input Field Validation
 ```python
 from pythonwebtools.utils.ValidatorUtils import ValidatorUtils
 
-# Inicializa o validador
+# Initialize the validator
 validate = ValidatorUtils()
 
-# Dados de entrada a serem validados
+# Input data to be validated
 input_data = {
-    'nome': 'João',
-    'idade': 30,
+    'name': 'João',
+    'age': 30,
     'email': 'joao@exemplo.com'
 }
 
-# Campos obrigatórios e seus tipos esperados
+# Required fields and their expected types
 required_fields = {
-    'nome': str,
-    'idade': int,
+    'name': str,
+    'age': int,
     'email': str
 }
 
-# Valida os dados de entrada
-erros = validate.validate_input(input_data, required_fields)
+# Validate the input data
+errors = validate.validate_input(input_data, required_fields)
 
-# Exibe mensagens de erro, se houver
-if erros:
-    for erro in erros:
-        print(f"Erro: {erro}")
+# Display error messages, if any
+if errors:
+    for error in errors:
+        print(f"Error: {error}")
 else:
-    print("Todos os campos são válidos!")
+    print("All fields are valid!")
 ```
 
-#### Validação de Número de Telefone
+#### Phone Number Validation
 ```python
 from pythonwebtools.utils.ValidatorUtils import ValidatorUtils
 
-# Formato de número de telefone: DDD seguido por 9 e 8 dígitos (sem espaços)
+# Phone number format: area code followed by 9 and 8 digits (no spaces)
 validate = ValidatorUtils()
-telefone_valido = '11981749632'
+valid_phone = '11981749632'
 
-# Verifica se o número de telefone é válido
-is_valid = validate.phone_number_validator(telefone_valido)  # Retorna True se válido, False se inválido
-print(f"Telefone válido: {is_valid}")
+# Check if the phone number is valid
+is_valid = validate.phone_number_validator(valid_phone)  # Returns True if valid, False if invalid
+print(f"Valid phone: {is_valid}")
 ```
 
-#### Validação de CPF
+#### CPF Validation
 ```python
 from pythonwebtools.utils.ValidatorUtils import ValidatorUtils
 
-# Formato de CPF: 11 dígitos (apenas números)
+# CPF format: 11 digits (only numbers)
 validate = ValidatorUtils()
-cpf_valido = '12345678909'
+valid_cpf = '12345678909'
 
-# Verifica se o CPF é válido
-is_valid = validate.cpf_validator(cpf_valido)  # Retorna True se válido, False se inválido
-print(f"CPF válido: {is_valid}")
+# Check if the CPF is valid
+is_valid = validate.cpf_validator(valid_cpf)  # Returns True if valid, False if invalid
+print(f"Valid CPF: {is_valid}")
 ```
 
-#### Validação de CNPJ
+#### CNPJ Validation
 ```python
 from pythonwebtools.utils.ValidatorUtils import ValidatorUtils
 
-# Formato de CNPJ: 14 dígitos (apenas números)
+# CNPJ format: 14 digits (only numbers)
 validate = ValidatorUtils()
-cnpj_valido = '12345678000195'
+valid_cnpj = '12345678000195'
 
-# Verifica se o CNPJ é válido
-is_valid = validate.cnpj_validator(cnpj_valido)  # Retorna True se válido, False se inválido
-print(f"CNPJ válido: {is_valid}")
+# Check if the CNPJ is valid
+is_valid = validate.cnpj_validator(valid_cnpj)  # Returns True if valid, False if invalid
+print(f"Valid CNPJ: {is_valid}")
 ```
 
-#### Validação de E-mail
+#### Email Validation
 ```python
 from pythonwebtools.utils.ValidatorUtils import ValidatorUtils
 
-# Formato de e-mail: padrão de e-mail (ex: usuario@exemplo.com)
+# Email format: standard email (ex: user@example.com)
 validate = ValidatorUtils()
-email_valido = 'usuario@exemplo.com'
+valid_email = 'user@example.com'
 
-# Verifica se o e-mail é válido
-is_valid = validate.email_validator(email_valido)  # Retorna True se válido, False se inválido
-print(f"E-mail válido: {is_valid}")
+# Check if the email is valid
+is_valid = validate.email_validator(valid_email)  # Returns True if valid, False if invalid
+print(f"Valid email: {is_valid}")
 ```
 
-#### Validação de Senha
+#### Password Validation
 ```python
 from pythonwebtools.utils.ValidatorUtils import ValidatorUtils
 
-# Regras da senha: mínimo de 8 caracteres, incluindo letras e números
+# Password rules: minimum of 8 characters, including letters and numbers
 validate = ValidatorUtils()
-senha_valida = 'Senha123'
+valid_password = 'Password123'
 
-# Verifica se a senha é válida
-is_valid = validate.password_validator(senha_valida)  # Retorna True se válida, False se inválida
-print(f"Senha válida: {is_valid}")
+# Check if the password is valid
+is_valid = validate.password_validator(valid_password)  # Returns True if valid, False if invalid
+print(f"Valid password: {is_valid}")
 ```
 
-#### Utilitários Criptográficos
+#### Cryptographic Utilities
 ```python
 from pythonwebtools.services.CryptService import CryptService
 
-# Inicializa o serviço de criptografia
+# Initialize the cryptography service
 crypt_service = CryptService()
 
-# Texto a ser criptografado
-texto_original = "Texto secreto"
+# Text to be encrypted
+original_text = "Secret text"
 
-# Criptografa o texto
-texto_criptografado = crypt_service.encrypt(texto_original)
-print(f"Texto criptografado: {texto_criptografado}")
+# Encrypt the text
+encrypted_text = crypt_service.encrypt(original_text)
+print(f"Encrypted text: {encrypted_text}")
 
-# Descriptografa o texto
-texto_descriptografado = crypt_service.decrypt(texto_criptografado)
-print(f"Texto descriptografado: {texto_descriptografado}")
+# Decrypt the text
+decrypted_text = crypt_service.decrypt(encrypted_text)
+print(f"Decrypted text: {decrypted_text}")
 ```
 
-#### Utilitários de Hash
+#### Hash Utilities
 ```python
 from pythonwebtools.services.HashService import HashService
 
 hash_service = HashService()
 
-# Gerando hash
-senha = 'SenhaForte5@'
-senha_hasheada = hash_service.hash_password(senha)
+# Generating hash
+password = 'StrongPassword5@'
+hashed_password = hash_service.hash_password(password)
 
-# Verificando o hash
+# Verifying the hash
 is_valid = hash_service.verify_password(
-    hashed_password=senha_hasheada,
-    provided_password=senha) # True se for válida, False se for inválida
+    hashed_password=hashed_password,
+    provided_password=password) # True if valid, False if invalid
 ```
 
 ---
