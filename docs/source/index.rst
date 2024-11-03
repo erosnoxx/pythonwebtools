@@ -25,3 +25,4 @@ To install PythonWebTools, you can use `pip`:
 
 ```bash
 pip install pythonwebtools
+```bash
