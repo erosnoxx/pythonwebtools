@@ -3,7 +3,7 @@ version: 2
 # Build settings
 sphinx:
   version: latest  # ou '3.x' se quiser usar uma versão específica
-  configuration: docs/conf.py
+  configuration: docs/source/conf.py
 
 python:
   version: 3.8  # ou outra versão do Python que você deseja usar

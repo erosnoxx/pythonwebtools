@@ -9,17 +9,17 @@
 project = 'pythonwebtools'
 copyright = '2024, Eros Gabriel Vieira'
 author = 'Eros Gabriel Vieira'
-release = '2024'
+release = '11/2024'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'myst_parser',
+    'myst_parser',  # Para suportar arquivos Markdown
 ]
 
 templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = []
 
 
 
