@@ -1,10 +1,10 @@
 import pytest
-from src.pythonwebtools.utils.ValidatorUtils import ValidatorsUtil
+from src.pythonwebtools.utils.ValidatorUtils import ValidatorUtils
 from tests.mock import *
 
 @pytest.fixture
 def validator():
-    return ValidatorsUtil()
+    return ValidatorUtils()
 
 @pytest.mark.validators
 def test_phone_number_validator(validator):
@@ -39,9 +39,8 @@ def test_validate_email(validator):
     valid_email = 'valid-email@email.com'
     invalid_email = "invalid-email"
     
-    assert validator.validate_email(valid_email) is None  # No exception should be raised
-    with pytest.raises(Exception):
-        validator.validate_email(invalid_email)
+    assert validator.validate_email(valid_email)  # No exception should be raised
+    assert not validator.validate_email(invalid_email)
 
 @pytest.mark.validators
 def test_validate_cpf(validator):
