@@ -6,7 +6,7 @@ sphinx:
   configuration: docs/conf.py
 
 python:
-  version: latest  # ou outra versão do Python que você deseja usar
+  version: 3.8  # ou outra versão do Python que você deseja usar
   install:
     - requirements: docs/requirements.txt  # Se você tiver dependências adicionais
 
