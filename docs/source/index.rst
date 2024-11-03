@@ -1,8 +1,8 @@
-# PythonWebTools
+PythonWebTools
 
 **PythonWebTools** is a utility library for Python focused on enhancing your web applications with common functions and tools.
 
-## Features
+Features
 
 - Email validation
 - CPF and CNPJ validation
@@ -11,22 +11,18 @@
 - Cryptographic utilities (Password hashing and encryption)
 - Input data verification
 
-## Table of Contents
+Contents:
+---------
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
 
-1. `Features and Examples <usage_examples>`_
+   usage_examples
 
-## Installation
+Installation
 
 To install PythonWebTools, you can use `pip`:
 
-```bash
+``
 pip install pythonwebtools
-```
-
-## Contributing
-
-Contributions are welcome! Please see the contribution guidelines in the GitHub repository.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+``
