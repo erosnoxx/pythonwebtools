@@ -17,4 +17,3 @@ class HashService:
             return True
         except exceptions.VerifyMismatchError:
             return False
-    

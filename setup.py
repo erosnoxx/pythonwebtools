@@ -2,11 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name='pythonwebtools',
-    version='0.1.1',
+    version='0.1.2',
     description='A utility library for Python that provides common validation and cryptographic functions for web development.',
     author='Eros Gabriel Vieira',
     author_email='apenaclaskrr@gmail.com',
-    url='https://github.com/erosnoxx/pywebtools',
+    url='https://github.com/erosnoxx/pythonwebtools',
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
     install_requires=[
