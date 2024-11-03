@@ -12,7 +12,7 @@ python:
 
 # Options for the documentation
 formats:
-  - htmlzip
+  - html
 
 # Optional: custom settings
 # You can add environment variables if needed
