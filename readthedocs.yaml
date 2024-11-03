@@ -12,8 +12,7 @@ python:
 build:
   os: ubuntu-22.04
   tools:
-    sphinx: latest
-    pip: latest
+    python: "3.8" 
 
 formats:
   - htmlzip
