@@ -52,12 +52,12 @@ class ValidatorsUtil:
 
         :param email: A string representing the email address to be validated.
         :return: True if the email address is valid.
-        :raises Exception: If the email address is not valid, an exception is raised with the error message.
         """
         try:
             validate_email(email)
+            return True
         except EmailNotValidError as e:
-            raise Exception(str(e))
+            return False
 
     def validate_cpf(self, cpf: str) -> bool:
         """
