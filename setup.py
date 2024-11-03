@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pythonwebtools',
-    version='0.1.2',
+    version='0.1.3',
     description='A utility library for Python that provides common validation and cryptographic functions for web development.',
     author='Eros Gabriel Vieira',
     author_email='apenaclaskrr@gmail.com',
