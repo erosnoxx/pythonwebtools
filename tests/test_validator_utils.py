@@ -1,5 +1,5 @@
 import pytest
-from src.utils.ValidatorUtils import ValidatorsUtil
+from src.pythonwebtools.utils.ValidatorUtils import ValidatorsUtil
 from tests.mock import *
 
 @pytest.fixture

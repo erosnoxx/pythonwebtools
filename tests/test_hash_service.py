@@ -1,5 +1,5 @@
 import pytest
-from src.services.HashService import HashService
+from src.pythonwebtools.services.HashService import HashService
 from tests.mock import generate_strong_password
 
 @pytest.mark.hash

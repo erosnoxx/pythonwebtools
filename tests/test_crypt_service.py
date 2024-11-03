@@ -1,5 +1,5 @@
 import pytest
-from src.services.CryptService import CryptService
+from src.pythonwebtools.services.CryptService import CryptService
 from tests.mock import generate_random_text, generate_faker_sentence
 
 @pytest.mark.crypt
