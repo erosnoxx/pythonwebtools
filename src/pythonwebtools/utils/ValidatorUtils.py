@@ -4,7 +4,7 @@ from typing import Dict, List, Any
 from email_validator import validate_email, EmailNotValidError
 
 
-class ValidatorsUtil:
+class ValidatorUtils:
     def __init__(self):
         self.phone_pattern = r'^\d{2}9\d{8}$'
         self.password_regex = r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+={}:;"\'<>,.?/~`-]).{8,}$'
