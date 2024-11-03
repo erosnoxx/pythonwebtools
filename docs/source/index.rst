@@ -1,19 +1,27 @@
-.. pythonwebtools documentation master file, created by
-   sphinx-quickstart on Sun Nov  3 03:41:09 2024.
-
+.. PythonWebTools documentation master file, created by
+   sphinx-quickstart on Sun Nov  3 12:30:15 2024.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-pythonwebtools documentation
-============================
+Welcome to PythonWebTools's documentation!
+===========================================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+PythonWebTools is a utility library for Python focused on enhancing your web applications with common functions and tools.
 
+Contents:
+---------
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   README.md
-   usage_examples.md
+   usage_examples
+   installation
+   contributing
+   license
+
+Getting Started
+---------------
+To install PythonWebTools, you can use `pip`:
+
+```bash
+pip install pythonwebtools
