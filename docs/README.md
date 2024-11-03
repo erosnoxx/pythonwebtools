@@ -1,5 +1,3 @@
----
-
 # PythonWebTools
 
 **PythonWebTools** is a utility library for Python focused on enhancing your web applications with common functions and tools.
