@@ -2,8 +2,10 @@ from setuptools import setup, find_packages
 
 setup(
     name='pythonwebtools',
-    version='0.1.3',
+    version='0.1.4',
     description='A utility library for Python that provides common validation and cryptographic functions for web development.',
+    long_description=open('docs/README.md').read(),  # Certifique-se de ter um README.md
+    long_description_content_type='text/markdown',  # Se estiver usando Markdown
     author='Eros Gabriel Vieira',
     author_email='apenaclaskrr@gmail.com',
     url='https://github.com/erosnoxx/pythonwebtools',
