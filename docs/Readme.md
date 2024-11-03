@@ -1,6 +1,6 @@
-# PyWebTools
+# PythonWebTools
 
-**PyWebTools** is a utility library for Python focused on enhancing your web applications with common utilities and helpers.
+**PythonWebTools** is a utility library for Python focused on enhancing your web applications with common utilities and helpers.
 
 ## Features
 
@@ -12,20 +12,20 @@
 
 ## Installation
 
-You can install PyWebTools using pip. It is recommended to use a virtual environment.
+You can install PythonWebTools using pip. It is recommended to use a virtual environment.
 
 ```bash
-pip install pywebtools
+pip install pythonwebtools
 ```
 
 ## Usage
 
-To use **PyWebTools** in your application, you need to import the required utilities from the library. Below are examples of how to use each feature.
+To use **PythonWebTools** in your application, you need to import the required utilities from the library. Below are examples of how to use each feature.
 
 ## Email Validation
 
 ```python
-from pywebtools.utils.ValidatorUtils import ValidatorsUtil
+from pythonwebtools.utils.ValidatorUtils import ValidatorsUtil
 
 validator = ValidatorsUtil()
 
@@ -39,7 +39,7 @@ except Exception as e:
 ## CPF Validation
 
 ```python
-from pywebtools.utils.ValidatorUtils import ValidatorsUtil
+from pythonwebtools.utils.ValidatorUtils import ValidatorsUtil
 
 validator = ValidatorsUtil()
 
@@ -51,7 +51,7 @@ print("CPF is valid:", is_valid_cpf)
 ## CNPJ Validation
 
 ```python
-from pywebtools.utils.ValidatorUtils import ValidatorsUtil
+from pythonwebtools.utils.ValidatorUtils import ValidatorsUtil
 
 validator = ValidatorsUtil()
 
@@ -63,7 +63,7 @@ print("CNPJ is valid:", is_valid_cnpj)
 ## Password Validation
 
 ```python
-from pywebtools.utils.ValidatorUtils import ValidatorsUtil
+from pythonwebtools.utils.ValidatorUtils import ValidatorsUtil
 
 validator = ValidatorsUtil()
 
@@ -75,21 +75,21 @@ print("Password is valid:", is_valid_password)
 ## Phone Number Validation
 
 ```python
-from pywebtools.utils.ValidatorUtils import ValidatorsUtil
+from pythonwebtools.utils.ValidatorUtils import ValidatorsUtil
 
 validator = ValidatorsUtil()
 
-phone_number = "5511997027812"  # Example phone number. Only works with brazilian phone numbers for now
+phone_number = "5511997027812"  # Example phone number. Only works with Brazilian phone numbers for now
 is_valid_phone = validator.phone_number_validator(phone_number)
 print("Phone number is valid:", is_valid_phone)
 ```
 
 ## Cryptographic Utilities
 
-For cryptographic functionalities, you can use the cryptography utilities provided in the **PyWebTools** library. Below is an example of how to hash a password:
+For cryptographic functionalities, you can use the cryptography utilities provided in the **PythonWebTools** library. Below is an example of how to hash a password:
 
 ```python
-from pywebtools.services.HashService import HashService
+from pythonwebtools.services.HashService import HashService
 
 hash_service = HashService()
 
