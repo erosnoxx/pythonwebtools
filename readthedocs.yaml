@@ -12,8 +12,8 @@ python:
 build:
   os: ubuntu-22.04
   tools:
-    - sphinx
-    - pip
+    sphinx: latest
+    pip: latest
 
 formats:
   - htmlzip
