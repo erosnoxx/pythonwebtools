@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pythonwebtools',
-    version='0.1.4',
+    version='0.1.7',
     description='A utility library for Python that provides common validation and cryptographic functions for web development.',
     long_description=open('docs/README.md').read(),
     long_description_content_type='text/markdown',
@@ -13,7 +13,6 @@ setup(
     package_dir={'': 'src'},
     install_requires=[
         'email-validator',   # For email validation
-        'python-dotenv',     # For loading environment variables from .env files
         'cryptography',      # For cryptographic operations
         'argon2-cffi'       # For secure password hashing
     ],

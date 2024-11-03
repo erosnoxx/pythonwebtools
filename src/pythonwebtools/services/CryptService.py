@@ -1,14 +1,12 @@
 import os
-from dotenv import load_dotenv
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.primitives import padding
 from cryptography.hazmat.backends import default_backend
 
-load_dotenv()
 
 class CryptService:
     def __init__(self):
-        self.key = bytes.fromhex(os.getenv('CRYPTO_KEY'))
+        self.key = bytes.fromhex('cc2b77c79470aea8b5beaee3a544f90b5af1ecf1dcaacb2d21ee2d49eafc874e')
         self.backend = default_backend()
 
     def encrypt(self, plaintext: str) -> str:

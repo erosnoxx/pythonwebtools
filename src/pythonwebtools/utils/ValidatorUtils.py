@@ -1,15 +1,13 @@
 import re
 import os
 from typing import Dict, List, Any
-from dotenv import load_dotenv
 from email_validator import validate_email, EmailNotValidError
 
-load_dotenv()
 
 class ValidatorsUtil:
     def __init__(self):
-        self.phone_pattern = os.getenv('PHONE_NUMBER_REGEX')
-        self.password_regex = os.getenv('PASSWORD_REGEX')
+        self.phone_pattern = r'^\d{2}9\d{8}$'
+        self.password_regex = r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+={}:;"\'<>,.?/~`-]).{8,}$'
 
     def phone_number_validator(self, phone_number: str) -> bool:
         """
