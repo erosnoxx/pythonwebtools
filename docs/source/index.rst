@@ -1,5 +1,6 @@
 .. pythonwebtools documentation master file, created by
    sphinx-quickstart on Sun Nov  3 03:41:09 2024.
+
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -14,5 +15,5 @@ documentation for details.
    :maxdepth: 2
    :caption: Contents:
 
-   ../README.md
-   ../usage_examples.md
+   README.md
+   usage_examples.md
